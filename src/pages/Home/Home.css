@@ -1,0 +1,32 @@
+.hero-section {
+  padding: 100px 20px;
+  background-color: #eeeeee;
+}
+
+.hero-section h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 20px;
+}
+
+.category-box {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 35px 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.category-box:hover {
+  transform: translateY(-5px);
+}
+
+.category-box i {
+  font-size: 35px;
+  display: block;
+  margin-bottom: 15px;
+}
