@@ -1,0 +1,149 @@
+
+/* Main About Page */
+.about-page {
+  background-color: #fff8f2;
+  color: #563344;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, #762344, #c66b91);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.about-hero h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.about-hero p {
+  font-size: 21px;
+}
+
+/* About Content */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 60px 8%;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  color: #8e245b;
+  font-size: 32px;
+}
+
+.about-text p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 450px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px #d9a5bd;
+}
+
+/* Mission Section */
+.mission-section {
+  background-color: #f8dce8;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.mission-section h2 {
+  color: #762344;
+  font-size: 32px;
+}
+
+.mission-section p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Categories */
+.about-categories {
+  padding: 50px 7%;
+  text-align: center;
+}
+
+.about-categories h2 {
+  color: #8e245b;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.about-card {
+  background-color: white;
+  padding: 30px 15px;
+  border: 1px solid #e8c5d5;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  background-color: #f8dce8;
+  box-shadow: 0 5px 15px #d9a5bd;
+}
+
+.about-card h3 {
+  color: #762344;
+}
+
+.about-card p {
+  line-height: 1.6;
+}
+
+/* Footer */
+.about-footer {
+  background-color: #762344;
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    padding: 35px 20px;
+  }
+
+  .about-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-hero h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+}
