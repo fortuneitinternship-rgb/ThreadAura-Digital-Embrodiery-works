@@ -41,11 +41,9 @@ function Navbar() {
             </li>
           
 
-            <li className="nav-item">
-              <Link className="nav-link" to="/products">
-                Categories
-              </Link>
-            </li>
+<Link to="/categories" className="nav-link">
+  Categories
+</Link>
 
             {/* Search */}
             <li className="nav-item search-item">

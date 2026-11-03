@@ -1,87 +1,74 @@
-import products from "../../data/products";
-import ProductCard from "../../components/ProductCard/ProductCard";
 
+import { Link } from "react-router-dom";
+import products from "../../Data/products";
 import "./Products.css";
 
 function Products() {
   return (
-    <div className="container py-5">
+    <div className="thread-products">
 
-      <h1 className="text-center mb-5">
-        Our Products
-      </h1>
+      <section className="products-banner">
+        <h1>Our Embroidery Collection</h1>
+        <p>Discover elegance in every stitch</p>
+      </section>
 
-      <div className="row">
+      <div className="container py-5">
 
-        {/* Filters */}
-        <div className="col-md-3">
-
-          <div className="filter-box">
-
-            <h4>Filters</h4>
-
-            <hr />
-
-            <label className="form-label">
-              Category
-            </label>
-
-            <select className="form-select mb-3">
-              <option>All Categories</option>
-              <option>Blouses</option>
-              <option>Sarees</option>
-              <option>Kurtis</option>
-              <option>Dupattas</option>
-            </select>
-
-            <label className="form-label">
-              Price
-            </label>
-
-            <select className="form-select mb-3">
-              <option>All Prices</option>
-              <option>Under ₹1000</option>
-              <option>₹1000 - ₹2000</option>
-              <option>Above ₹2000</option>
-            </select>
-
-            <label className="form-label">
-              Size
-            </label>
-
-            <select className="form-select">
-              <option>All Sizes</option>
-              <option>S</option>
-              <option>M</option>
-              <option>L</option>
-              <option>XL</option>
-            </select>
-
-          </div>
-
+        <div className="text-center mb-5">
+          <h2>Explore Our Products</h2>
+          <p>Beautiful handcrafted embroidery for every occasion.</p>
         </div>
 
+        <div className="row g-4">
 
-        {/* Products */}
-        <div className="col-md-9">
+          {products.map((product) => (
+            <div className="col-lg-3 col-md-4 col-sm-6" key={product.id}>
 
-          <div className="row g-4">
+              <div className="thread-product-card">
 
-            {products.map((product) => (
-              <div
-                className="col-md-4"
-                key={product.id}
-              >
-                <ProductCard product={product} />
+                <Link to={`/products/${product.id}`}>
+                  <div className="product-image-box">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="product-image"
+                    />
+                    <span className="product-tag">
+                      New Collection
+                    </span>
+                  </div>
+                </Link>
+
+                <div className="product-info">
+                  <p className="product-category">
+                    {product.category}
+                  </p>
+
+                  <h5>{product.name}</h5>
+
+                  <p className="product-rating">
+                    ⭐ {product.rating}
+                  </p>
+
+                  <h5 className="product-price">
+                    ₹{product.price}
+                  </h5>
+
+                  <Link
+                    to={`/products/${product.id}`}
+                    className="product-btn"
+                  >
+                    View Details
+                  </Link>
+                </div>
+
               </div>
-            ))}
 
-          </div>
+            </div>
+          ))}
 
         </div>
-
       </div>
-
     </div>
   );
 }

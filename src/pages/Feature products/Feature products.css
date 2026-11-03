@@ -1,0 +1,135 @@
+
+.featured-section {
+  background: #fff8f7;
+  padding: 65px 0;
+}
+
+.featured-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.featured-heading span {
+  color: #a13b61;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.featured-heading h2 {
+  color: #58172f;
+  font-size: 34px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.featured-heading p {
+  color: #777;
+}
+
+.featured-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(80, 20, 40, 0.09);
+  transition: 0.3s;
+  height: 100%;
+}
+
+.featured-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(80, 20, 40, 0.16);
+}
+
+.featured-art {
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.featured-art i {
+  font-size: 65px;
+}
+
+.featured-art span {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.featured-art small {
+  font-size: 12px;
+}
+
+.featured-art.pink {
+  background: linear-gradient(135deg, #ffdae6, #f5a9c5);
+  color: #8e2850;
+}
+
+.featured-art.purple {
+  background: linear-gradient(135deg, #e6d6ff, #b59ae9);
+  color: #512c83;
+}
+
+.featured-art.orange {
+  background: linear-gradient(135deg, #ffe0bd, #f6ad70);
+  color: #9a4a1c;
+}
+
+.featured-art.blue {
+  background: linear-gradient(135deg, #d4e9ff, #91bde9);
+  color: #244f83;
+}
+
+.featured-info {
+  padding: 20px;
+}
+
+.featured-category {
+  color: #a13b61;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.featured-info h5 {
+  color: #3c2630;
+  font-size: 16px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.featured-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.featured-bottom h5 {
+  color: #781e40;
+  font-size: 19px;
+  margin: 0;
+}
+
+.featured-bottom span {
+  color: #d49b24;
+  font-size: 13px;
+}
+
+.featured-btn {
+  width: 100%;
+  border: none;
+  background: #781e40;
+  color: white;
+  padding: 11px;
+  border-radius: 7px;
+  margin-top: 18px;
+  transition: 0.3s;
+}
+
+.featured-btn:hover {
+  background: #4c1029;
+}
