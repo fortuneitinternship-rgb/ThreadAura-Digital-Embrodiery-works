@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import products from "../../Data/products";
 import "./Products.css";
